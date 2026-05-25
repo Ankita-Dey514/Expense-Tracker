@@ -1,0 +1,39 @@
+/* App Styles */
+.app {
+  min-height: 100vh;
+  background: #f5f5f5;
+}
+
+.main-content {
+  padding: 30px 0;
+  flex: 1;
+}
+
+.container {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+/* Loading States */
+p {
+  margin: 0;
+}
+
+/* Error Messages */
+.error {
+  color: #e74c3c;
+  font-size: 14px;
+  margin: 10px 0 0 0;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .main-content {
+    padding: 20px 0;
+  }
+
+  .container {
+    padding: 0 15px;
+  }
+}

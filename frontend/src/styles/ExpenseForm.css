@@ -1,0 +1,88 @@
+/* Expense Form Styles */
+.expense-form {
+  background: white;
+  padding: 30px;
+  border-radius: 12px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+  margin-bottom: 30px;
+}
+
+.expense-form h2 {
+  color: #333;
+  margin-bottom: 20px;
+  font-size: 20px;
+}
+
+.expense-form form {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 15px;
+}
+
+.expense-form input,
+.expense-form select {
+  padding: 12px;
+  border: 1px solid #ddd;
+  border-radius: 6px;
+  font-size: 14px;
+  font-family: inherit;
+  transition: border-color 0.3s;
+}
+
+.expense-form input:focus,
+.expense-form select:focus {
+  outline: none;
+  border-color: #667eea;
+  box-shadow: 0 0 0 3px rgba(102, 126, 234, 0.1);
+}
+
+.expense-form input[type='text'] {
+  grid-column: 1 / -1;
+}
+
+.expense-form button {
+  grid-column: 1 / -1;
+  padding: 12px;
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  color: white;
+  border: none;
+  border-radius: 6px;
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: transform 0.2s;
+}
+
+.expense-form button:hover {
+  transform: translateY(-2px);
+}
+
+.expense-form .cancel-btn {
+  background: #ccc;
+  grid-column: 1 / 2;
+}
+
+.expense-form .cancel-btn:hover {
+  background: #bbb;
+}
+
+.expense-form .error {
+  grid-column: 1 / -1;
+  color: #e74c3c;
+  font-size: 14px;
+  margin: -10px 0 0 0;
+}
+
+@media (max-width: 768px) {
+  .expense-form form {
+    grid-template-columns: 1fr;
+  }
+
+  .expense-form input[type='text'] {
+    grid-column: auto;
+  }
+
+  .expense-form button {
+    grid-column: auto;
+  }
+}
